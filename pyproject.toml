@@ -1,0 +1,48 @@
+[project]
+name = "meme-generator"
+version = "0.1.0"
+description = "An AI-powered meme generator that learns your humor preferences through reinforcement learning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # Web Scraping
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    
+    # Google Drive
+    "gdown>=5.2.0",
+    
+    # Image/Audio/Video
+    "Pillow>=10.1.0",
+    "pygame>=2.5.0",
+    
+    # Computer Vision & Emotion
+    "opencv-python>=4.8.0",
+    "deepface>=0.0.79",
+    "tf-keras>=2.15.0",
+    
+    # Reinforcement Learning
+    "gymnasium>=0.29.0",
+    "stable-baselines3>=2.2.0",
+    "torch>=2.1.0",
+    
+    # Utilities
+    "tqdm>=4.66.0",
+    "loguru>=0.7.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
